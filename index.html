@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en-XK">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta property="og:title" content="Front-End Academy" />
+        <meta property="og:description" content ="We are on a mission to build the largest Tech Community in Kosovo! If you're passionate about technology, eager to grow, and excited to connect with others — you belong here."/>
+        <meta property="og:image" content="images/send-page.png" />
+        <meta property="og:image:width" content="200">
+        <meta property="og:image:height" content="150">
+        <meta property="og:url"content="https://creativehubkos.com/tech-community/" />
+        
+        <meta name="keywords" content="">
+
+        <link rel="alternate" hreflang="mk-MK" href="https://creativehub.mk/tech-community/">
+        <link rel="alternate" hreflang="en-MK" href="https://creativehub.mk/en/tech-community/">
+        <link rel="alternate" hreflang="en-XK" href="https://creativehubkos.com/tech-community/">
+        <link rel="alternate" hreflang="x-default" href="https://creativehub.mk/en/tech-community/">
+
+
+        <title>Tech Community | Creative Hub Kosovo</title>
+        <meta name="description" content="We are on a mission to build the largest Tech Community in Kosovo! If you're passionate about technology, eager to grow, and excited to connect with others — you belong here.">
+    
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/style-mobile.css">
+        <link rel="stylesheet" href="styles/fonts.css">
+        <link rel="stylesheet" href="styles/forms.css">
+        
+        <link rel="shortcut icon" href="images/favicon.webp" type="images/x-icon">
+        
+        <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+
+    </head>
+
+    <body class="manrope-regular">
+
+        <!-- on page load pop up -->
+
+        <div class="modal modal-load fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- waiting list modal -->
+
+        <div class="modal fade" id="waitingListModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <header>
+           
+            <div class="spots">
+                <div>
+                    Successful careers <span class="bolded-text">made possible.</span>
+                </div>
+
+                <div class="hstack gap-2">
+                    <img src="images/phone.svg" alt="phone">
+                    <a href="tel:+38349334437">+383 49 334 437</a>
+                </div>
+            </div>
+
+            <section class="nav-hero">
+                <!-- Navbar -->
+                <section id="nav" class="nav">
+                    <div class="navbar navbar-expand-md">
+                        <div class="container-fluid">
+                            <a href="https://creativehubkos.com" class="navbar-brand">
+                                <img src="images/header-logo.png" alt="logo">
+                            </a>
+                            
+                            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+        
+                            <div class="navbar-collapse collapse " id="navMenu">
+                                <ul class="navbar-nav mx-auto">
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Academies</a>
+        
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="https://creativehubkos.com/digital-marketing/" class="dropdown-item">Digital Marketing + AI</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://creativehubkos.com/hr/" class="dropdown-item">Human Resources + AI</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://creativehubkos.com/front-end/" class="dropdown-item">Front-End + AI</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://creativehubkos.com/data-science/" class="dropdown-item">Data Science & Analytics</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://creativehubkos.com/project-management/" class="dropdown-item">AI-Powered Project Management</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://creativehubkos.com/ai-business/" class="dropdown-item">AI for Business</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://creativehubkos.com/full-stack/" class="dropdown-item">FullStack Development + AI</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Summer Programs</a>
+        
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="https://creativehubkos.com/business-analytics-course/" class="dropdown-item">US Certified Business Analytics Course</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://creativehubkos.com/recruitment-course/" class="dropdown-item">US Certified  Recruitment Course</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+        
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Career</a>
+        
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="https://creativehubkos.com/blog/" class="dropdown-item">Blog</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://hiring.creativehubkos.com" class="dropdown-item">Hiring Platform</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="https://creativehubkos.com/events/" class="nav-link">Events</a>
+                                    </li>
+        
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Campuses</a>
+        
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="https://creativehubkos.com" class="dropdown-item">Kosovo</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://creativehub.mk" class="dropdown-item">Macedonia</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://creativehubmiami.com" class="dropdown-item">Miami</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tech</a>
+        
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="https://creativehubkos.com/tech-job/" class="nav-link">Tech Job Fair</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://creativehubkos.com/tech-community/" class="nav-link">Tech Community</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="hstack gap-2 d-none d-md-flex">
+                            <span class="applications-number">549</span>
+                            <span class="applications-text">applications <br> this month</span>
+                            <a href="#">
+                                <button class="waiting-btn" data-bs-toggle="modal" data-bs-target="#waitingListModal">Join The Waiting List</button>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Hero -->
+                <section class="hero">
+                    <div class="container">
+                        <h1 class="d-none d-md-block">
+                            Welcome to the <span>Creative Hub</span> <br> 
+                            Kosovo Tech Community!
+                        </h1>
+                        
+                        <p class="d-none d-md-block">
+                            We are on a mission to build the <span>largest Tech Community in Kosovo!</span> <br> 
+                            If you're passionate about technology, eager to grow, and excited to connect with 
+                            others — <span>you belong here.</span>
+                        </p>
+
+                        <!-- MOBILE -->
+                        <h1 class="d-block d-md-none">
+                            Welcome to the <span>Creative Hub</span> 
+                            Kosovo Tech Community!
+                        </h1>
+                        
+                        <p class="d-block d-md-none">
+                            We are on a mission to build the <span>largest Tech Community in Kosovo!</span> 
+                            If you're passionate about technology, eager to grow, and excited to connect with 
+                            others — <span>you belong here.</span>
+                        </p>
+
+                        <button onclick="scrollInto('events')">See Events</button>
+                    </div>
+                </section>
+            </section>
+        </header>
+
+        <main>
+            <!-- UPCOMING EVENTS -->
+            <section id="upcomingEvents">
+                <div class="container">
+                    <div class="hstack gap-2 mb-3">
+                        <img src="images/upcoming-events-icon-1.svg" alt="icon-1">
+                        <h2>Explore Upcoming Events</h2>
+                    </div>
+
+                    <p>Check out our lineup of tech-focused events designed to boost your skills and expand your network.</p>
+
+                    <div class="hstack gap-2 mt-2">
+                        <img src="images/upcoming-events-icon-2.svg" alt="icon-2">
+                        <h4> Each event has limited spots and a small fee of just 5 EUR.</h4>
+                    </div>
+                </div>
+            </section>
+
+            <!-- GET REWARDED -->
+            <section id="getRewarded">
+                <div class="container">
+                    <div class="hstack gap-2 mb-3">
+                        <img src="images/get-rewarded-icon-1.svg" alt="icon-1">
+                        <h2>Get Rewarded</h2>
+                    </div>
+
+                    <p>
+                        With every event registration, you’ll receive a <span class="big-text">100 EUR voucher</span> 
+                        you can apply to any <span class="bold-text">Creative Hub Academy</span> program.
+                    </p>
+
+                    <div class="vstack gap-3">
+                        <div class="hstack gap-2 white-box">
+                            <img src="images/get-rewarded-icon-2.svg" alt="icon-2">
+                            <p><span>One voucher</span> per person can be redeemed.</p>
+                        </div>
+
+                        <div class="hstack gap-2 white-box">
+                            <img src="images/get-rewarded-icon-3.svg" alt="icon-3">
+                            <p>Already used yours? You can <span>gift your extra</span> vouchers to friends!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- JOIN PRIVATE DISCORD GROUP -->
+            <section id="joinGroup">
+                <div class="container">
+                    <div class="hstack gap-2 mb-3">
+                        <img src="images/join-group-icon-1.svg" alt="icon-1">
+                        <h2>Join Private Discord Group</h2>
+                    </div>
+
+                    <p>
+                        By registering, you’ll gain exclusive access to our private Discord group where you can:
+                    </p>
+
+                    <ul>
+                        <li>Meet fellow tech enthusiasts</li>
+                        <li>Get important updates first</li>
+                        <li>Join discussions and collaborate</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- WHY JOIN -->
+            <section id="whyJoin">
+                <div class="container">
+                    <div class="hstack gap-2 mb-3">
+                        <img src="images/why-join-icon-1.svg" alt="icon-1">
+                        <h2>Why Join?</h2>
+                    </div>
+
+                    <p>
+                        Because the <span>future of tech in Kosovo</span> is being built together. 
+                        Whether you’re a student, junior developer, or a curious beginner 
+                        — this is your space to <span>learn, grow, and lead.</span>
+                    </p>
+
+                    <div class="yellow-box">
+                        <h4>Ready to be part of something big?</h4>
+                        <p> Register for an event and take your place in Kosovo’s largest tech movement.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EVENTS -->
+            <section id="events">
+                <div class="container">
+                    <!-- JULY EVENTS -->
+                    <div class="hstack gap-2 mb-3">
+                        <img src="images/july-events-icon-1.svg" alt="icon-1">
+                        <h2 class="title">July Events</h2>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-4">
+                            <div class="card">
+                                <div class="vstack mb-4">
+                                    <div class="hstack gap-2">
+                                        <img src="images/events-calender-icon.svg" alt="calendar-icon">
+                                        <p class="date">July 16, 2025</p>
+                                    </div>
+
+                                    <div class="hstack gap-2">
+                                        <img src="images/events-time-icon.svg" alt="time-icon">
+                                        <p class="time">18:00 - 20:00</p>
+                                    </div>
+
+                                    <div class="hstack gap-2">
+                                        <img src="images/events-time-icon.svg" alt="time-icon">
+                                        <p class="time">ICK Prishtina</p>
+                                    </div>
+                                </div>
+
+                                <h3 class="mb-4">
+                                    Future of Hiring: AI <br> 
+                                    Trend that every HR <br> 
+                                    Should Know
+                                </h3>
+
+                                <p class="speakers">Speakers:</p>
+
+                                <div class="hstack gap-2 mb-2">
+                                    <img src="images/events-lavdrim.svg" alt="lavdrim">
+
+                                    <div class="vstack">
+                                        <p class="name">Lavdrim Muhaxheri</p>
+                                        <p class="position">HR Lead of Talent at Gjirafa</p>
+                                    </div>
+                                </div>
+
+                                <div class="hstack gap-2 mb-2">
+                                    <img src="images/events-arta.svg" alt="arta">
+
+                                    <div class="vstack">
+                                        <p class="name">Arta Koka Grubi</p>
+                                        <p class="position">HR Director at IPKO Telecommunications</p>
+                                    </div>
+                                </div>
+
+                                <div class="hstack gap-2 mb-3">
+                                    <img src="images/events-agrina.svg" alt="agrina">
+
+                                    <div class="vstack">
+                                        <p class="name">Agrina Sadiku</p>
+                                        <p class="position">Recruiter, People and Culture at Povio</p>
+                                    </div>
+                                </div>
+
+                                <a href="https://buy.stripe.com/00g7sE71Q8KD3Xq7sH" target="_blank">
+                                    <button class="mb-3">Register to Get Location</button>
+                                </a>
+
+                                <p class="end-text">Location sent after registration.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="card">
+                                <div class="vstack mb-4">
+                                    <div class="hstack gap-2">
+                                        <img src="images/events-calender-icon.svg" alt="calendar-icon">
+                                        <p class="date">July 22, 2025</p>
+                                    </div>
+
+                                    <div class="hstack gap-2">
+                                        <img src="images/events-time-icon.svg" alt="time-icon">
+                                        <p class="time">18:00 - 20:00</p>
+                                    </div>
+
+                                    <div class="hstack gap-2">
+                                        <img src="images/events-time-icon.svg" alt="time-icon">
+                                        <p class="time">ICK Prishtina</p>
+                                    </div>
+                                </div>
+
+                                <h3 class="mb-4">
+                                    AI Skills in <br> 
+                                    Demand for Project <br> 
+                                    Managers in 2025
+                                </h3>
+
+                                <p class="speakers">Speakers:</p>
+
+                                <div class="hstack gap-2 mb-2">
+                                    <img src="images/events-ereza.svg" alt="ereza">
+
+                                    <div class="vstack">
+                                        <p class="name">Ereza Gjakolli</p>
+                                        <p class="position">Product Manager at Valtech</p>
+                                    </div>
+                                </div>
+
+                                <div class="hstack gap-2 mb-2">
+                                    <img src="images/events-arber.svg" alt="arber">
+
+                                    <div class="vstack">
+                                        <p class="name">Arber Berisha</p>
+                                        <p class="position">Project Manager at Native Teams</p>
+                                    </div>
+                                </div>
+
+                                <div class="hstack gap-2 mb-2">
+                                    <img src="images/events-arber.svg" alt="arber">
+
+                                    <div class="vstack">
+                                        <p class="name">Arber Berisha</p>
+                                        <p class="position">Project Manager at Native Teams</p>
+                                    </div>
+                                </div>
+
+                                <a href="https://buy.stripe.com/00g7sE71Q8KD3Xq7sH" target="_blank">
+                                    <button class="mb-3">Register to Get Location</button>
+                                </a>
+
+                                <p class="end-text">Location sent after registration.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="card">
+                                <div class="vstack mb-4">
+                                    <div class="hstack gap-2">
+                                        <img src="images/events-calender-icon.svg" alt="calendar-icon">
+                                        <p class="date">July 29, 2025</p>
+                                    </div>
+
+                                    <div class="hstack gap-2">
+                                        <img src="images/events-time-icon.svg" alt="time-icon">
+                                        <p class="time">18:00 - 20:00</p>
+                                    </div>
+
+                                    <div class="hstack gap-2">
+                                        <img src="images/events-time-icon.svg" alt="time-icon">
+                                        <p class="time">ICK Prishtina</p>
+                                    </div>
+                                </div>
+
+                                <h3 class="mb-4">
+                                    AI Skills for Future- <br> 
+                                    Ready Marketing <br> 
+                                    Career
+                                </h3>
+
+                                <p class="speakers">Speakers:</p>
+
+                                <div class="hstack gap-2 mb-2">
+                                    <img src="images/events-ereza.svg" alt="ereza">
+
+                                    <div class="vstack">
+                                        <p class="name">Ereza Gjakolli</p>
+                                        <p class="position">Product Manager at Valtech</p>
+                                    </div>
+                                </div>
+
+                                <div class="hstack gap-2 mb-2">
+                                    <img src="images/events-ereza.svg" alt="ereza">
+
+                                    <div class="vstack">
+                                        <p class="name">Ereza Gjakolli</p>
+                                        <p class="position">Product Manager at Valtech</p>
+                                    </div>
+                                </div>
+
+                                <div class="hstack gap-2 mb-2">
+                                    <img src="images/events-arber.svg" alt="arber">
+
+                                    <div class="vstack">
+                                        <p class="name">Arber Berisha</p>
+                                        <p class="position">Project Manager at Native Teams</p>
+                                    </div>
+                                </div>
+
+                                <a href="https://buy.stripe.com/00g7sE71Q8KD3Xq7sH" target="_blank">
+                                    <button class="mb-3">Register to Get Location</button>
+                                </a>
+
+                                <p class="end-text">Location sent after registration.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AUGUST EVENTS -->
+                    <div class="hstack gap-2 mb-3 mt-5">
+                        <img src="images/july-events-icon-1.svg" alt="icon-1">
+                        <h2 class="title">August Events</h2>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-4">
+                            <div class="card">
+                                <div class="vstack mb-4">
+                                    <div class="hstack gap-2">
+                                        <img src="images/events-calender-icon.svg" alt="calendar-icon">
+                                        <p class="date">August 7, 2025</p>
+                                    </div>
+
+                                    <div class="hstack gap-2">
+                                        <img src="images/events-time-icon.svg" alt="time-icon">
+                                        <p class="time">18:00 - 20:00</p>
+                                    </div>
+
+                                    <div class="hstack gap-2">
+                                        <img src="images/events-time-icon.svg" alt="time-icon">
+                                        <p class="time">ICK Prishtina</p>
+                                    </div>
+                                </div>
+
+                                <h3 class="mb-4">
+                                    Starting your Data <br> 
+                                    Analyst Career with <br> 
+                                    AI Skills
+                                </h3>
+
+                                <p class="speakers">Speakers:</p>
+
+                                <div class="hstack gap-2 mb-2">
+                                    <img src="images/events-ereza.svg" alt="ereza">
+
+                                    <div class="vstack">
+                                        <p class="name">Ereza Gjakolli</p>
+                                        <p class="position">Product Manager at Valtech</p>
+                                    </div>
+                                </div>
+
+                                <div class="hstack gap-2 mb-2">
+                                    <img src="images/events-arber.svg" alt="arber">
+
+                                    <div class="vstack">
+                                        <p class="name">Arber Berisha</p>
+                                        <p class="position">Project Manager at Native Teams</p>
+                                    </div>
+                                </div>
+
+                                <a href="https://buy.stripe.com/00g7sE71Q8KD3Xq7sH" target="_blank">
+                                    <button class="mb-3">Register to Get Location</button>
+                                </a>
+
+                                <p class="end-text">Location sent after registration.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="card">
+                                <div class="vstack mb-4">
+                                    <div class="hstack gap-2">
+                                        <img src="images/events-calender-icon.svg" alt="calendar-icon">
+                                        <p class="date">August 14, 2025</p>
+                                    </div>
+
+                                    <div class="hstack gap-2">
+                                        <img src="images/events-time-icon.svg" alt="time-icon">
+                                        <p class="time">18:00 - 20:00</p>
+                                    </div>
+
+                                    <div class="hstack gap-2">
+                                        <img src="images/events-time-icon.svg" alt="time-icon">
+                                        <p class="time">ICK Prishtina</p>
+                                    </div>
+                                </div>
+
+                                <h3 class="mb-4">
+                                    From 0 to Frontend <br> 
+                                    Developer in 2025
+                                </h3>
+
+                                <p class="speakers">Speakers:</p>
+
+                                <div class="hstack gap-2 mb-2">
+                                    <img src="images/events-ereza.svg" alt="ereza">
+
+                                    <div class="vstack">
+                                        <p class="name">Ereza Gjakolli</p>
+                                        <p class="position">Product Manager at Valtech</p>
+                                    </div>
+                                </div>
+
+                                <div class="hstack gap-2 mb-2">
+                                    <img src="images/events-arber.svg" alt="arber">
+
+                                    <div class="vstack">
+                                        <p class="name">Arber Berisha</p>
+                                        <p class="position">Project Manager at Native Teams</p>
+                                    </div>
+                                </div>
+
+                                <a href="https://buy.stripe.com/00g7sE71Q8KD3Xq7sH" target="_blank">
+                                    <button class="mb-3">Register to Get Location</button>
+                                </a>
+
+                                <p class="end-text">Location sent after registration.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="card">
+                                <div class="vstack mb-4">
+                                    <div class="hstack gap-2">
+                                        <img src="images/events-calender-icon.svg" alt="calendar-icon">
+                                        <p class="date">August 21, 2025</p>
+                                    </div>
+
+                                    <div class="hstack gap-2">
+                                        <img src="images/events-time-icon.svg" alt="time-icon">
+                                        <p class="time">18:00 - 20:00</p>
+                                    </div>
+
+                                    <div class="hstack gap-2">
+                                        <img src="images/events-time-icon.svg" alt="time-icon">
+                                        <p class="time">ICK Prishtina</p>
+                                    </div>
+                                </div>
+
+                                <h3 class="mb-4">
+                                    Launch Your <br> 
+                                    Fullstack Developer <br> 
+                                    Career in 2025
+                                </h3>
+
+                                <p class="speakers">Speakers:</p>
+
+                                <div class="hstack gap-2 mb-2">
+                                    <img src="images/events-ereza.svg" alt="ereza">
+
+                                    <div class="vstack">
+                                        <p class="name">Ereza Gjakolli</p>
+                                        <p class="position">Product Manager at Valtech</p>
+                                    </div>
+                                </div>
+
+                                <div class="hstack gap-2 mb-2">
+                                    <img src="images/events-arber.svg" alt="arber">
+
+                                    <div class="vstack">
+                                        <p class="name">Arber Berisha</p>
+                                        <p class="position">Project Manager at Native Teams</p>
+                                    </div>
+                                </div>
+
+                                <a href="https://buy.stripe.com/00g7sE71Q8KD3Xq7sH" target="_blank">
+                                    <button class="mb-3">Register to Get Location</button>
+                                </a>
+
+                                <p class="end-text">Location sent after registration.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WHAT'S NEXT -->
+            <section id="whatsNext">
+                <div class="container">
+                    <div class="hstack gap-2">
+                        <img src="images/whats-next-icon-1.svg" alt="icon-1">
+                        <h2>What’s Next?</h2>
+                    </div>
+
+                    <p>
+                        <span>Tech Job Fair 2.0 & AI Conference</span> is coming soon! <br>
+                        Pre‑register here to secure your spot and be the first to know when details drop.
+                    </p>
+
+                    <div class="d-flex gap-2 flex-column flex-md-row align-items-center">
+                        <button>Pre-Register</button>
+                        <span>( and get first the info )</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- QUESTIONS -->
+            <section id="questions">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-9">
+                            <div class="left-side">
+                                <div class="hstack gap-2 mb-3">
+                                    <img src="images/questions-icon-1.svg" alt="icon-1">
+                                    <h2>Have Questions? Want to Get Involved?</h2>
+                                </div>
+
+                                <p>
+                                    Interested in speaking at future events or sponsoring one of our <br> 
+                                    <span>legendary Happy Hours</span>? 
+                                </p>
+
+                                <h6>
+                                    Write to Behar Xhoxha, our Tech Community Specialist:
+                                </h6>
+
+                                <div class="hstack gap-2 ">
+                                    <img src="images/questions-icon-2.svg" alt="icon-2">
+                                    <p class="email">behar@creativehubkos.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-3">
+                            <div class="right-side">
+                                <img src="images/questions-person.svg" alt="questions-person">
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <section class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <div class="vstack gap-3">
+                                <div>
+                                    <a href="https://creativehubkos.com">
+                                        <img src="images/footer-logo.png" alt="logo">
+                                    </a>
+                                    <p class="mt-3 careers-text">Successful careers <span>made possible.</span></p>
+                                </div>
+    
+                                <div class="social-media d-none d-md-block">
+                                    <p class="social-media-text">Follow us on Social Media</p>
+                                    <div class="hstack gap-4">
+                                        <a href="https://www.facebook.com/creativehubkosovo">
+                                            <img src="images/facebook-logo.png" alt="facebook">
+                                        </a>
+    
+                                        <a href="https://www.instagram.com/creativehubkosovo/">
+                                            <img src="images/instagram-logo.png" alt="instagram">
+                                        </a>
+    
+                                        <a href="https://www.linkedin.com/school/creativehubkosovo/">
+                                            <img src="images/linkenin-logo.png" alt="linkedin">
+                                        </a>
+    
+                                        <a href="https://www.tiktok.com/@_creativehubkosovo?_t=8rCMUUZqaoy&_r=1 ">
+                                            <img src="images/tic-tok-logo.png" alt="tic-tok-logo">
+                                        </a>
+    
+                                        <a href="https://www.youtube.com/@creativehubkosovo6452">
+                                            <img src="images/youtube-logo.png" alt="youtube">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-lg-2">
+                            <div class="vstack gap-0 gap-md-1 mt-4 mt-lg-0">
+                                <h3>Academies</h3>
+    
+                                <a href="https://creativehubkos.com/digital-marketing/">
+                                    <p>Digital Marketing + AI</p>
+                                </a>
+    
+                                <a href="https://creativehubkos.com/data-science/">
+                                    <p>Data Science & Analytics</p>
+                                </a>
+    
+                                <a href="https://creativehubkos.com/front-end/">
+                                    <p>Front-end Development + AI</p>
+                                </a>
+    
+                                <a href="https://creativehubkos.com/hr/">
+                                    <p>Human Resources + AI </p>
+                                </a>
+
+                                <a href="https://creativehubkos.com/project-management/">
+                                    <p>AI-Powered Project Management</p>
+                                </a>
+
+                                <a href="https://creativehubkos.com/ai-business/">
+                                    <p>AI for Business</p>
+                                </a> 
+
+                                <a href="https://creativehubkos.com/full-stack/">
+                                    <p>FullStack Development + AI</p>
+                                </a>
+                                            
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-2">
+                            <div class="vstack gap-1">
+                                <h3>Summer Programs</h3>
+    
+                                <a href="https://creativehubkos.com/business-analytics-course/"> 
+                                    <p>US Certified  Business Analytics Course</p>
+                                </a>
+    
+                                <a href="https://creativehubkos.com/recruitment-course/">
+                                    <p>US Certified  Recruitment Course</p>
+                                </a>
+    
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-lg-2">
+                            <div class="vstack gap-0 gap-md-1 mt-4 mt-sm-0">
+                                <h3>Campuses</h3>
+    
+                                <a href="https://creativehubkos.com">
+                                    <p>Creative Hub Kosovo</p>
+                                </a>
+    
+                                <a href="https://creativehubmiami.com">
+                                    <p>Creative Hub Miami</p>
+                                </a>
+    
+                                <a href="https://creativehub.mk">
+                                    <p>Creative Hub Macedonia</p>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-lg-3">
+                            <div class="vstack gap-0 gap-md-1 mt-4 mt-sm-0">
+                                <h3>Job Placement Resources</h3>
+    
+                                <a href="https://creativehubkos.com/tech-job/">
+                                    <p>Tech Job Fair</p>
+                                </a>
+
+                                <a href="https://creativehubkos.com/tech-community/" class="active">
+                                    <p>Tech Community</p>
+                                </a>
+    
+                                <a href="e-books/AL DM eBook 0807.pdf">
+                                    <p>Technical Interview Questions Digital Marketing</p>
+                                </a>
+    
+                                <a href="e-books/1-eBook-Human-Resources-Academy.pdf">
+                                    <p>Technical Interview Questions Human Resources</p>
+                                </a>
+    
+                                <a href="e-books/1-eBook-FrontEnd-Academy.pdf">
+                                    <p>Technical Interview Questions Frontend Development</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- MOBILE -->
+                        <div class="col-12 d-block d-md-none">
+                            <div class="social-media mt-5">
+                                <div class="hstack gap-5">
+                                    <a href="https://www.facebook.com/creativehubkosovo">
+                                        <img src="images/facebook-logo.png" alt="facebook">
+                                    </a>
+
+                                    <a href="https://www.instagram.com/creativehubkosovo/">
+                                        <img src="images/instagram-logo.png" alt="instagram">
+                                    </a>
+
+                                    <a href="https://www.linkedin.com/school/creativehubkosovo/">
+                                        <img src="images/linkenin-logo.png" alt="linkedin">
+                                    </a>
+
+                                    <a href="https://www.tiktok.com/@_creativehubkosovo?_t=8rCMUUZqaoy&_r=1 ">
+                                        <img src="images/tic-tok-logo.png" alt="tic-tok-logo">
+                                    </a>
+
+                                    <a href="https://www.youtube.com/@creativehubkosovo6452">
+                                        <img src="images/youtube-logo.png" alt="youtube">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            
+            <section class="subfooter">
+                <span>
+                    © Copyright 2025 Creative Hub | Skopje / Pristina / Miami | contact@creativehubkos.com / +383 49 334 437
+                </span>
+            </section>
+        </footer>
+        
+    </body>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/forms.js"></script>
+        <script src="scripts/bootstrap.bundle.min.js"></script>
+        </html>
