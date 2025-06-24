@@ -159,7 +159,7 @@ a{
 
 /* MAIN */
 #upcomingEvents{
-    padding: 8% 0;
+    padding: 5% 0;
     background-image: url('../images/upcoming-events-bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -177,116 +177,36 @@ a{
         color: #071336;
     }
 
-    & h4{
-        font-size: 28px;
-        font-weight: 800;
-        color: #071336;
-    }
-}
+    & .perks-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
 
-#getRewarded{
-    padding: 5% 0;
-    background-color: #F7FECF;
+        & .perk{
+            background-color: #F7FECF;
+            padding: 1%;
+            border-radius: 8px;
 
-    & h2{
-        font-size: 40px;
-        font-weight: 800;
-        color: #071336;
-    }
+            & h4{
+                font-size: 28px;
+                font-weight: 800;
+                color: #071336;
+            }
 
-    & p{
-        font-size: 20px;
-        font-weight: 500;
-        color: rgba(7, 19, 54, 0.78);
+            & p{
+                font-size: 20px;
+                font-weight: 500;
+                color: #071336;
 
-        & .big-text{
-            font-size: 28px;
-            font-weight: 800;
-        }
-
-        & .bold-text{
-            font-weight: 800;
-        }
-       
-    }
-
-     & .white-box{
-        background-color: #FFFFFF;
-        padding: 2% 3%;
-        border-radius: 8px;
-
-        & p{
-            font-size: 20px;
-            color: #071336;
-            margin: 0;
-
-            & span{
-                font-weight: 700;
+                & span{
+                    font-size: 24px;
+                    font-weight: 800;
+                }
             }
         }
     }
-}
 
-#joinGroup{
-    padding: 5% 0;
-    background-image: url('../images/join-group-bg.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 
-    & h2{
-        font-size: 40px;
-        font-weight: 800;
-        color: #071336;
-    }
-
-    & p{
-        font-size: 20px;
-        font-weight: 500;
-        color: rgba(7, 19, 54, 0.78);
-    }
-
-    & ul>li{
-        font-size: 28px;
-        font-weight: 800;
-        color: #071336;
-    }
-
-    & ul>li::marker {
-        color: #39E36E;
-    }
-}
-
-#whyJoin{
-    padding: 5% 0;
-    background-color: #E0FAED;
-
-    & h2{
-        font-size: 40px;
-        font-weight: 800;
-        color: #071336;
-    }
-
-    & p{
-        font-size: 20px;
-        font-weight: 500;
-        color: rgba(7, 19, 54, 0.78);
-
-        & span{
-            font-weight: 800;
-        }
-    }
-
-    & .yellow-box{
-        background-color: #F7FECF;
-        padding: 3% 2%;
-
-        & h4{
-           font-size: 28px;
-            font-weight: 800;
-            color: rgba(7, 19, 54, 0.78) 
-        }
-    }
 }
 
 #events{

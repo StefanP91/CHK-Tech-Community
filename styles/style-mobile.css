@@ -51,62 +51,22 @@
             color: #071336;
         }
 
-        & h4{
-            font-size: 20px;
-        }
-    }
+        & .perks-container{
 
-    #getRewarded{
+            & .perk{
+                padding: 3%;
 
-        & h2{
-            font-size: 32px;
-        }
+                & h4{
+                    font-size: 24px;
+                }
 
-        & p{
-            font-size: 18px;
+                & p{
+                    font-size: 18px;
 
-            & .big-text{
-                font-size: 18px;
-            }
-        }
-
-        & .white-box{
-
-            & p{
-                font-size: 18px;
-            }
-        }
-    }
-
-    #joinGroup{
-        & h2{
-            font-size: 32px;
-        }
-
-        & p{
-            font-size: 18px;
-        }
-
-        & ul>li{
-            font-size: 20px;
-        }
-    }
-
-    #whyJoin{
-        & h2{
-            font-size: 32px;
-        }
-
-        & p{
-            font-size: 20px;
-        }
-
-        & .yellow-box{
-            background-color: #F7FECF;
-            padding: 5%;
-
-            & h4{
-                font-size: 28px;
+                    & span{
+                        font-size: 18px;
+                    }
+                }
             }
         }
     }
